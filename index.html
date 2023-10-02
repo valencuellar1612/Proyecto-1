@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
 </head>
 <body>
     <section class = "container"></section>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="header__nav">
             <div>
-                <ul class = "container_list">
+                <ul class = "container_list active">
                     <li>
                         <a href="#home" >Home</a>
                     </li>
@@ -19,12 +20,15 @@
                         <a href="#experiencias">Experiencia y Habilidades</a>
                     </li>
                     <li>
-                        <a href="#">Portafolio</a>
+                        <a href="#portafolio">Portafolio</a>
                     </li>
                     <li>
-                        <a href="#">Contacto</a>
+                        <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
+                <button class="header__btn">
+                    <box-icon name='menu' color='#fcda68'  ></box-icon>
+                </button>
             </div>
         </nav>
     </header>
@@ -37,27 +41,29 @@
             <p class = "parrafo_1">Mi experiencia diseñando ha sido única, la forma en la que nos enseñan a hacerlo hace que se sienta fácil y podamos dejar volar más la imaginación al diseño que es algo que me apasiona </p>
             <p class="parrafo_2"><span class="section">Iniciando </span>la experiencia</p>
             <ul class = "iconos">
-                <!-- <li class = "icono_1"></li> -->
-                <a href="">
+                <a href="https://www.linkedin.com/in/valentina-cuellar-martinez-a9bb54120/" target=_blank> 
                     <img src="./img/linkedin.png" alt="linkedin" width="15px" height="15px">
                 </a>
-                <!-- <li class = "icono_2"></li> -->
-                <a href="">
+                <a href="https://instagram.com/" target=_blank>
                     <img src="./img/instagram.png" alt="instagram" width="15px" height="15px">
                 </a>
-                <!-- <li class = "icono_3"></li> -->
-                <a href="">
+                <a href="https://twitter.com/" target=_blank>
                     <img src="./img/Twitter.png" alt="twitter" width="15px" height="24px">
                 </a>
             </ul>
+            <div class="imagen_movil">
+                <figure>
+                    <img src="./img/photo mobile.png" alt="foto" width="100%">
+                </figure>
+            </div>
             <div class="descripcion_bt">
-                <a href="https://www.gmail.com" target="_blank"><button>Contactame</button></a>
+                <a href="#contacto"><button>Contactame</button></a>
             </div>   
             </div>
-            <div class = "home_1">
+            <div class ="home_1">
                 <figure class="container_imagen">
-                <img src="./img/foto.jpeg"width="70%">
-            </figure>
+                    <img src="./img/photo desktop.png" alt="foto" width="80%">
+                </figure>
             </div>
         </div>
     </article>
@@ -69,25 +75,90 @@
             </div> 
             <div class ="experiencias_1">
                 <h3 class = "subtitulo">Experiencia</h3>
-                <p class ="p1">2016-2018</p>
-                <hr>
-                <p class ="p1">2018-2019</p>
-                <hr>
-                <p class ="p1">2019-2021</p>
-                <hr>
+                <div class="tabla">
+                    <div class="tabla_1">
+                        <p class ="p1">2016-2018</p>
+                        <br>
+                        <hr>
+                        <p class ="p1">2018-2019</p>
+                        <br>
+                        <hr>
+                        <p class ="p1">2019-2021</p>
+                        <br>
+                    </div>
+                    <div class="tabla_2">
+                        <h4 class ="p2">Visual designer</h4>
+                        <p class ="p1">Wizeline</p>
+                        <hr>
+                        <h4 class ="p2">Product designer</h4>
+                        <p class ="p1">Microsoft</p>
+                        <hr>
+                        <h4 class ="p2">UI Engineer</h4>
+                        <p class ="p1">Google</p>
+                    </div>
+                </div>
             </div>
-        </div class = "container_experiencias2">
-        <h3 class = "subtitulo2">Habilidades</h3>
-        <div class = "experiencias_2">
-            
         </div>
-
+        <h3 class="subtitulo2"> Habilidades</h3>
+        <div class="imagenes_1">
+            <figure>
+                <img class="Image" src="./img/mobile.svg" alt="foto" > <figcaption class="figcaption">Mobile app design</figcaption>
+            </figure>
+            <figure>
+                <img class="Image" src="./img/motion.svg" alt="foto" > <figcaption class="figcaption">Motion design</figcaption>
+            </figure>
+            <figure>
+                <img class="Image" src="./img/material.svg" alt="foto" > <figcaption class="figcaption">Creacion y mantenimiento de sistemas de diseño</figcaption>
+            </figure>
+            <figure>
+                <img class="Image" src="./img/design.svg" alt="foto" > <figcaption class="figcaption">Gestion de proyectos</figcaption>
+            </figure>
         </div>
-        <div>
-
+    </article>
+    <article id="portafolio">
+        <h2 class="titulo_porta">Portafolio</h2>
+        <div class="container_portafolio">
+            <div class="imagenes_porta">
+                <h3 class="sub">Beauty App</h3>
+                <figure>
+                    <img class="Image" src="./img/ejemplo 3.png" alt="foto"> 
+                </figure>
+            </div>
+            <div class="imagenes_porta">
+                <h3 class="sub">Training App</h3>
+                <figure>
+                    <img class="Image" src="./img/ejemplo 1.png" alt="foto"> 
+                </figure>
+            </div>
+            <div class="imagenes_porta">
+                <h3 class="sub">Hotel App</h3>
+                <figure>
+                    <img class="Image" src="./img/ejemplo 2.png" alt="foto"> 
+                </figure>
+            </div>
+        </div>
+    </article>
+    <article id="contacto">
+        <h2 class="titulo_contac">Contacto</h2>
+        <div class="container_contacto">
+            <div class="contacto_1">
+                <figure>
+                    <img class="Image_1" src="./img/phone.svg" alt="foto"> 
+                </figure>
+                <h4>Numero celular</h4>
+                <p>+57 3175268757</p>
+            </div>
+            <div class="contacto_1">
+                <figure>
+                    <img class="Image_1" src="./img/mail.svg" alt="foto"> 
+                </figure>
+                <h4>Email</h4>
+                <p>valencuellar1612@gmail.com</p>
+            </div>
         </div>
     </article>
 </main>
         </section>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
