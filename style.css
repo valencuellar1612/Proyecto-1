@@ -38,6 +38,9 @@ body{
     cursor: pointer;
     color: #8E7BEF;
 }
+.header__btn {
+    display: none;
+}
 .container_home{
     display: flex; 
     flex-direction: row;
@@ -291,13 +294,13 @@ body{
     top: 50px;
     justify-content: center;
     align-items: center;
-    right: -100%;
+    right: 0;
+    transition: right .5s linear;
     border: 1px solid #8E7BEF;
     background-color: white
 }
-
 .container_list.active {
-    right: 0;
+    right:-100%;
     transition: right .5s linear;
 }
 .container_list a {
@@ -307,6 +310,7 @@ body{
     border-bottom: 1px solid #8E7BEF;
 }
 .header__btn {
+    display: block;
     height: fit-content;
     background-color: transparent;
     border: none;
